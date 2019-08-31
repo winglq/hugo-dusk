@@ -1,0 +1,12 @@
+<h1 class="title"> {{ .Title }} </h1>
+
+{{ .Site.Author.name }}, {{ .Date.Format "2 Jan 2006" }}
+
+{{ if .Params.categories }}
+  on
+  {{ range .Params.categories }}
+    <div class="tag">
+      <a href="/categories/{{ . | urlize }}">{{.}}</a>
+    </div>
+  {{ end }}
+{{ end }}

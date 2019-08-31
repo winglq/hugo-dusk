@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
 
+
 <article class="post">
-    <h1 class="title"> {{ .Title }} </h1>
+    {{ partial "postheader.html" . }}
     <div class="content"> {{ .Content }} </div>
     {{ partial "postfooter.html" . }}
 </article>
