@@ -3,25 +3,24 @@
  * main green: #99cc66
  * */
 
-:root {
-    --main-bg-color: #101010;
-    --main-text: #ffffff;
-    --main-sec: #99cc66; /* main secondary color for the site */
-    --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
-    --copyright: #404040; /* copyright text color */
-}
+$main-bg: #101010;
+$main-text: #ffffff;
+$main-sec: #99cc66; /* main secondary color for the site */
+$code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
+$copyright: #404040; /* copyright text color */
+
 
 body {
-  background: var(--main-bg-color);
-  color: var(--main-text);
+  background: $main-bg;
+  color: $main-text;
 }
 
 a {
-  color: var(--main-text);
+  color: $main-text;
 }
 
 pre {
-  background: var(--main-bg-color);
+  background: $main-bg;
   border: 1px solid #303030;
   border-radius: 5px;
 }
@@ -31,8 +30,8 @@ code {
 }
 
 blockquote {
-  background: var(--main-bg-color);
-  border-left: 3px solid var(--main-sec);
+  background: $main-bg;
+  border-left: 3px solid $main-sec;
 }
 
 table { margin: 1em auto; border-collapse: collapse; }
@@ -40,7 +39,7 @@ table, th, td { border: 1px solid #5C5C5C; }
 tr:hover { background: #1D1F21; }
 th { background: #1D1F21; }
 .siteTitle a {
-  color: var(--main-sec);
+  color: $main-sec;
 }
 
 .post {
@@ -50,19 +49,19 @@ th { background: #1D1F21; }
   box-shadow: 0 1px 2px 0 #000000, 0 2px 5px 0 #000000;
 }
 
-.post .content h1{ color: var(--main-sec); }
-.post .content h2{ color: var(--main-sec); }
-.post .content h3{ color: var(--main-sec); }
-.post .content h4{ color: var(--main-sec); }
-.post .content h5{ color: var(--main-sec); }
-.post .content h6{ color: var(--main-sec); }
-.post .content a:hover { color: var(--main-sec); }
-.social-link:hover { color: var(--main-sec); }
-.nav-item-title:hover { color: var(--main-sec); }
-.tag a:hover { color: var(--main-sec); }
-.copyright { color: var(--copyright); }
-.poweredby { color: var(--copyright); }
-.poweredby a { color: var(--copyright); }
+.post .content h1{ color: $main-sec; }
+.post .content h2{ color: $main-sec; }
+.post .content h3{ color: $main-sec; }
+.post .content h4{ color: $main-sec; }
+.post .content h5{ color: $main-sec; }
+.post .content h6{ color: $main-sec; }
+.post .content a:hover { color: $main-sec; }
+.social-link:hover { color: $main-sec; }
+.nav-item-title:hover { color: $main-sec; }
+.tag a:hover { color: $main-sec; }
+.copyright { color: $copyright; }
+.poweredby { color: $copyright; }
+.poweredby a { color: $copyright; }
 
 .post-preview {
   border: 1px solid #303030;
@@ -76,7 +75,7 @@ th { background: #1D1F21; }
 }
 
 .post-preview .title a {
-  color: var(--main-sec);
+  color: $main-sec;
 }
 
 .content-item {
@@ -92,25 +91,25 @@ th { background: #1D1F21; }
 
 .content-item a:hover{
   text-decoration: underline;
-  color: var(--main-sec);
+  color: $main-sec;
 }
 
 .post-list .title {
-  color: var(--main-sec);
+  color: $main-sec;
 }
 
 .rmore {
-  color: var(--main-text);
+  color: $main-text;
 }
 
 .rmore a {
-  background: var(--main-bg-color);
+  background: $main-bg;
   border: 1px solid #303030;
 }
 
 .rmore a:hover {
   background: #202020;
-  color: var(--main-text);
+  color: $main-text;
 }
 
 .terms {
@@ -125,7 +124,7 @@ th { background: #1D1F21; }
 
 .term a:hover {
   text-decoration: underline;
-  color: var(--main-sec);
+  color: $main-sec;
 }
 
 .err-404 {

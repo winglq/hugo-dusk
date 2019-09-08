@@ -9,7 +9,7 @@
     - some small layout changes
 
 ### Changed
-  * Theme colors can be changed in a custom css file
+  * Theme colors can be changed in a custom scss file
   * minimal required Hugo version is v0.57.2
   * sort posts/pages on the error page by last modification date
 
